@@ -1,0 +1,4 @@
+[0828/164511.506:ERROR:crash_report_database_win.cc(580)] CreateDirectory C:\Users\da4\AppData\Local\Temp\scoped_dir3060_174868693\Crashpad: The system cannot find the path specified. (0x3)
+[0901/163019.877:ERROR:crash_report_database_win.cc(580)] CreateDirectory C:\Users\da4\AppData\Local\Temp\scoped_dir21828_1452315255\Crashpad: The system cannot find the path specified. (0x3)
+[0928/191712.948:ERROR:crash_report_database_win.cc(580)] CreateDirectory C:\Users\da4\AppData\Local\Temp\scoped_dir23808_1005385704\Crashpad: The system cannot find the path specified. (0x3)
+[1009/125843.899:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)

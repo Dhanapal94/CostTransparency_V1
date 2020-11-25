@@ -1,0 +1,8 @@
+****** User Input Required in data.properties file ********
+1.browser
+2.Type
+3.CostType
+4.Diagnosis
+5.Query[for Member Data Validation]
+6.MemberidSurgeryExpected
+7.MailRecipientsTo

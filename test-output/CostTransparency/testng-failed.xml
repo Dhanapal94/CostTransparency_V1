@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [CostTransparency]">
+  <listeners>
+    <listener class-name="ct.listeners.Reporting"/>
+  </listeners>
+  <test thread-count="5" name="CTSurgeryExpectedTest(failed)">
+    <classes>
+      <class name="ct.Testcases.CostTransparencySurgeryExpected">
+        <methods>
+          <include name="removeExtent"/>
+          <include name="setExtent"/>
+          <include name="oneTwentyDaysPastSwitchToOriginalDataDBTest"/>
+          <include name="appActualEstimationDBTest"/>
+          <include name="switchToOriginalDataDBTest"/>
+          <include name="removingFlags"/>
+          <include name="addingInitialDetails"/>
+          <include name="tearDown"/>
+          <include name="resetDBTest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- ct.Testcases.CostTransparencySurgeryExpected -->
+    </classes>
+  </test> <!-- CTSurgeryExpectedTest(failed) -->
+</suite> <!-- Failed suite [CostTransparency] -->

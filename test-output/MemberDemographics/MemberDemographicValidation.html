@@ -1,0 +1,835 @@
+<html>
+<head>
+<title>TestNG:  MemberDemographicValidation</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>MemberDemographicValidation</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>55/11/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Aug 23 18:08:20 IST 2020</td>
+</tr>
+<tr><td>Total time:</td><td>108 seconds (108823 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='ct.Testcases.CostTransparencyFields.oopLimitInNetworkTest()'><b>oopLimitInNetworkTest</b><br>Test class: ct.Testcases.CostTransparencyFields</td>
+<td><div><pre>java.lang.AssertionError: oopLimitInNetwork is mismatched expected [$5,900.00] but found []
+	at ct.Testcases.CostTransparencyFields.oopLimitInNetworkTest(CostTransparencyFields.java:281)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace513279161", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace513279161'><pre>java.lang.AssertionError: oopLimitInNetwork is mismatched expected [$5,900.00] but found []
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at ct.Testcases.CostTransparencyFields.oopLimitInNetworkTest(CostTransparencyFields.java:281)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>ct.Testcases.CostTransparencyFields@14f232c4</td></tr>
+<tr>
+<td title='ct.Testcases.CostTransparencyFields.oopLimitInNetworkTest()'><b>oopLimitInNetworkTest</b><br>Test class: ct.Testcases.CostTransparencyFields</td>
+<td><div><pre>java.lang.AssertionError: oopLimitInNetwork is mismatched expected [$6,700.00] but found []
+	at ct.Testcases.CostTransparencyFields.oopLimitInNetworkTest(CostTransparencyFields.java:281)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1368128912", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1368128912'><pre>java.lang.AssertionError: oopLimitInNetwork is mismatched expected [$6,700.00] but found []
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at ct.Testcases.CostTransparencyFields.oopLimitInNetworkTest(CostTransparencyFields.java:281)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>ct.Testcases.CostTransparencyFields@2415fc55</td></tr>
+<tr>
+<td title='ct.Testcases.CostTransparencyFields.oopLimitOutNetworkTest()'><b>oopLimitOutNetworkTest</b><br>Test class: ct.Testcases.CostTransparencyFields</td>
+<td><div><pre>java.lang.AssertionError: oopLimitOutNetwork is mismatched expected [$10,000.00 Combined] but found []
+	at ct.Testcases.CostTransparencyFields.oopLimitOutNetworkTest(CostTransparencyFields.java:265)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1285072597", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1285072597'><pre>java.lang.AssertionError: oopLimitOutNetwork is mismatched expected [$10,000.00 Combined] but found []
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at ct.Testcases.CostTransparencyFields.oopLimitOutNetworkTest(CostTransparencyFields.java:265)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>ct.Testcases.CostTransparencyFields@14f232c4</td></tr>
+<tr>
+<td title='ct.Testcases.CostTransparencyFields.oopLimitOutNetworkTest()'><b>oopLimitOutNetworkTest</b><br>Test class: ct.Testcases.CostTransparencyFields</td>
+<td><div><pre>java.lang.AssertionError: oopLimitOutNetwork is mismatched expected [$10,000.00 Combined] but found []
+	at ct.Testcases.CostTransparencyFields.oopLimitOutNetworkTest(CostTransparencyFields.java:265)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1493642909", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1493642909'><pre>java.lang.AssertionError: oopLimitOutNetwork is mismatched expected [$10,000.00 Combined] but found []
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at ct.Testcases.CostTransparencyFields.oopLimitOutNetworkTest(CostTransparencyFields.java:265)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>ct.Testcases.CostTransparencyFields@2415fc55</td></tr>
+<tr>
+<td title='ct.Testcases.CostTransparencyFields.oopSpentInNetworkTest()'><b>oopSpentInNetworkTest</b><br>Test class: ct.Testcases.CostTransparencyFields</td>
+<td><div><pre>java.lang.AssertionError: oopSpentInNetwork is mismatched expected [60.0] but found []
+	at ct.Testcases.CostTransparencyFields.oopSpentInNetworkTest(CostTransparencyFields.java:273)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace767393855", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace767393855'><pre>java.lang.AssertionError: oopSpentInNetwork is mismatched expected [60.0] but found []
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at ct.Testcases.CostTransparencyFields.oopSpentInNetworkTest(CostTransparencyFields.java:273)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>ct.Testcases.CostTransparencyFields@14f232c4</td></tr>
+<tr>
+<td title='ct.Testcases.CostTransparencyFields.oopSpentInNetworkTest()'><b>oopSpentInNetworkTest</b><br>Test class: ct.Testcases.CostTransparencyFields</td>
+<td><div><pre>java.lang.AssertionError: oopSpentInNetwork is mismatched expected [240.0] but found []
+	at ct.Testcases.CostTransparencyFields.oopSpentInNetworkTest(CostTransparencyFields.java:273)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1242969461", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1242969461'><pre>java.lang.AssertionError: oopSpentInNetwork is mismatched expected [240.0] but found []
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at ct.Testcases.CostTransparencyFields.oopSpentInNetworkTest(CostTransparencyFields.java:273)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>ct.Testcases.CostTransparencyFields@2415fc55</td></tr>
+<tr>
+<td title='ct.Testcases.CostTransparencyFields.oopSpentOutNetworkTest()'><b>oopSpentOutNetworkTest</b><br>Test class: ct.Testcases.CostTransparencyFields</td>
+<td><div><pre>java.lang.AssertionError: oopSpentOutNetwork is mismatched expected [50.0] but found []
+	at ct.Testcases.CostTransparencyFields.oopSpentOutNetworkTest(CostTransparencyFields.java:257)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1899567935", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1899567935'><pre>java.lang.AssertionError: oopSpentOutNetwork is mismatched expected [50.0] but found []
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at ct.Testcases.CostTransparencyFields.oopSpentOutNetworkTest(CostTransparencyFields.java:257)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>ct.Testcases.CostTransparencyFields@14f232c4</td></tr>
+<tr>
+<td title='ct.Testcases.CostTransparencyFields.oopSpentOutNetworkTest()'><b>oopSpentOutNetworkTest</b><br>Test class: ct.Testcases.CostTransparencyFields</td>
+<td><div><pre>java.lang.AssertionError: oopSpentOutNetwork is mismatched expected [20.0] but found []
+	at ct.Testcases.CostTransparencyFields.oopSpentOutNetworkTest(CostTransparencyFields.java:257)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace304966690", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace304966690'><pre>java.lang.AssertionError: oopSpentOutNetwork is mismatched expected [20.0] but found []
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at ct.Testcases.CostTransparencyFields.oopSpentOutNetworkTest(CostTransparencyFields.java:257)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>ct.Testcases.CostTransparencyFields@2415fc55</td></tr>
+<tr>
+<td title='ct.Testcases.CostTransparencyFields.planNameTest()'><b>planNameTest</b><br>Test class: ct.Testcases.CostTransparencyFields</td>
+<td><div><pre>java.lang.AssertionError: planName is mismatched expected [AARP Medicare Advantage Choice Plan 1 (PPO)] but found []
+	at ct.Testcases.CostTransparencyFields.planNameTest(CostTransparencyFields.java:217)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1378559537", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1378559537'><pre>java.lang.AssertionError: planName is mismatched expected [AARP Medicare Advantage Choice Plan 1 (PPO)] but found []
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at ct.Testcases.CostTransparencyFields.planNameTest(CostTransparencyFields.java:217)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>ct.Testcases.CostTransparencyFields@14f232c4</td></tr>
+<tr>
+<td title='ct.Testcases.CostTransparencyFields.planNameTest()'><b>planNameTest</b><br>Test class: ct.Testcases.CostTransparencyFields</td>
+<td><div><pre>java.lang.AssertionError: planName is mismatched expected [UnitedHealthcare Group Medicare Advantage (PPO)] but found []
+	at ct.Testcases.CostTransparencyFields.planNameTest(CostTransparencyFields.java:217)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1367612102", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1367612102'><pre>java.lang.AssertionError: planName is mismatched expected [UnitedHealthcare Group Medicare Advantage (PPO)] but found []
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at ct.Testcases.CostTransparencyFields.planNameTest(CostTransparencyFields.java:217)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>ct.Testcases.CostTransparencyFields@2415fc55</td></tr>
+<tr>
+<td title='ct.Testcases.CostTransparencyFields.procedurecodeDescriptionTest()'><b>procedurecodeDescriptionTest</b><br>Test class: ct.Testcases.CostTransparencyFields</td>
+<td><div><pre>java.lang.AssertionError: procedureCodeDescription is mismatched expected [] but found [69990]
+	at ct.Testcases.CostTransparencyFields.procedurecodeDescriptionTest(CostTransparencyFields.java:330)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace593308118", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace593308118'><pre>java.lang.AssertionError: procedureCodeDescription is mismatched expected [] but found [69990]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at ct.Testcases.CostTransparencyFields.procedurecodeDescriptionTest(CostTransparencyFields.java:330)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>ct.Testcases.CostTransparencyFields@2415fc55</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='ct.Testcases.CostTransparencyFields.HICNTest()'><b>HICNTest</b><br>Test class: ct.Testcases.CostTransparencyFields</td>
+<td></td>
+<td>0</td>
+<td>ct.Testcases.CostTransparencyFields@14f232c4</td></tr>
+<tr>
+<td title='ct.Testcases.CostTransparencyFields.HICNTest()'><b>HICNTest</b><br>Test class: ct.Testcases.CostTransparencyFields</td>
+<td></td>
+<td>0</td>
+<td>ct.Testcases.CostTransparencyFields@2415fc55</td></tr>
+<tr>
+<td title='ct.Testcases.CostTransparencyFields.addressTest()'><b>addressTest</b><br>Test class: ct.Testcases.CostTransparencyFields</td>
+<td></td>
+<td>0</td>
+<td>ct.Testcases.CostTransparencyFields@14f232c4</td></tr>
+<tr>
+<td title='ct.Testcases.CostTransparencyFields.addressTest()'><b>addressTest</b><br>Test class: ct.Testcases.CostTransparencyFields</td>
+<td></td>
+<td>0</td>
+<td>ct.Testcases.CostTransparencyFields@2415fc55</td></tr>
+<tr>
+<td title='ct.Testcases.CostTransparencyFields.cityTest()'><b>cityTest</b><br>Test class: ct.Testcases.CostTransparencyFields</td>
+<td></td>
+<td>0</td>
+<td>ct.Testcases.CostTransparencyFields@14f232c4</td></tr>
+<tr>
+<td title='ct.Testcases.CostTransparencyFields.cityTest()'><b>cityTest</b><br>Test class: ct.Testcases.CostTransparencyFields</td>
+<td></td>
+<td>0</td>
+<td>ct.Testcases.CostTransparencyFields@2415fc55</td></tr>
+<tr>
+<td title='ct.Testcases.CostTransparencyFields.dateOfBirthTest()'><b>dateOfBirthTest</b><br>Test class: ct.Testcases.CostTransparencyFields</td>
+<td></td>
+<td>0</td>
+<td>ct.Testcases.CostTransparencyFields@14f232c4</td></tr>
+<tr>
+<td title='ct.Testcases.CostTransparencyFields.dateOfBirthTest()'><b>dateOfBirthTest</b><br>Test class: ct.Testcases.CostTransparencyFields</td>
+<td></td>
+<td>0</td>
+<td>ct.Testcases.CostTransparencyFields@2415fc55</td></tr>
+<tr>
+<td title='ct.Testcases.CostTransparencyFields.dateOfProcedureTest()'><b>dateOfProcedureTest</b><br>Test class: ct.Testcases.CostTransparencyFields</td>
+<td></td>
+<td>0</td>
+<td>ct.Testcases.CostTransparencyFields@14f232c4</td></tr>
+<tr>
+<td title='ct.Testcases.CostTransparencyFields.dateOfProcedureTest()'><b>dateOfProcedureTest</b><br>Test class: ct.Testcases.CostTransparencyFields</td>
+<td></td>
+<td>0</td>
+<td>ct.Testcases.CostTransparencyFields@2415fc55</td></tr>
+<tr>
+<td title='ct.Testcases.CostTransparencyFields.deductibeLimitInNetworkTest()'><b>deductibeLimitInNetworkTest</b><br>Test class: ct.Testcases.CostTransparencyFields</td>
+<td></td>
+<td>0</td>
+<td>ct.Testcases.CostTransparencyFields@14f232c4</td></tr>
+<tr>
+<td title='ct.Testcases.CostTransparencyFields.deductibeLimitInNetworkTest()'><b>deductibeLimitInNetworkTest</b><br>Test class: ct.Testcases.CostTransparencyFields</td>
+<td></td>
+<td>0</td>
+<td>ct.Testcases.CostTransparencyFields@2415fc55</td></tr>
+<tr>
+<td title='ct.Testcases.CostTransparencyFields.deductibeLimitOutNetworkTest()'><b>deductibeLimitOutNetworkTest</b><br>Test class: ct.Testcases.CostTransparencyFields</td>
+<td></td>
+<td>0</td>
+<td>ct.Testcases.CostTransparencyFields@14f232c4</td></tr>
+<tr>
+<td title='ct.Testcases.CostTransparencyFields.deductibeLimitOutNetworkTest()'><b>deductibeLimitOutNetworkTest</b><br>Test class: ct.Testcases.CostTransparencyFields</td>
+<td></td>
+<td>0</td>
+<td>ct.Testcases.CostTransparencyFields@2415fc55</td></tr>
+<tr>
+<td title='ct.Testcases.CostTransparencyFields.deductibeSpentInNetworkTest()'><b>deductibeSpentInNetworkTest</b><br>Test class: ct.Testcases.CostTransparencyFields</td>
+<td></td>
+<td>0</td>
+<td>ct.Testcases.CostTransparencyFields@14f232c4</td></tr>
+<tr>
+<td title='ct.Testcases.CostTransparencyFields.deductibeSpentInNetworkTest()'><b>deductibeSpentInNetworkTest</b><br>Test class: ct.Testcases.CostTransparencyFields</td>
+<td></td>
+<td>0</td>
+<td>ct.Testcases.CostTransparencyFields@2415fc55</td></tr>
+<tr>
+<td title='ct.Testcases.CostTransparencyFields.deductibeSpentOutNetworkTest()'><b>deductibeSpentOutNetworkTest</b><br>Test class: ct.Testcases.CostTransparencyFields</td>
+<td></td>
+<td>0</td>
+<td>ct.Testcases.CostTransparencyFields@14f232c4</td></tr>
+<tr>
+<td title='ct.Testcases.CostTransparencyFields.deductibeSpentOutNetworkTest()'><b>deductibeSpentOutNetworkTest</b><br>Test class: ct.Testcases.CostTransparencyFields</td>
+<td></td>
+<td>0</td>
+<td>ct.Testcases.CostTransparencyFields@2415fc55</td></tr>
+<tr>
+<td title='ct.Testcases.CostTransparencyFields.facilityTest()'><b>facilityTest</b><br>Test class: ct.Testcases.CostTransparencyFields</td>
+<td></td>
+<td>0</td>
+<td>ct.Testcases.CostTransparencyFields@14f232c4</td></tr>
+<tr>
+<td title='ct.Testcases.CostTransparencyFields.facilityTest()'><b>facilityTest</b><br>Test class: ct.Testcases.CostTransparencyFields</td>
+<td></td>
+<td>0</td>
+<td>ct.Testcases.CostTransparencyFields@2415fc55</td></tr>
+<tr>
+<td title='ct.Testcases.CostTransparencyFields.firstNameTest()'><b>firstNameTest</b><br>Test class: ct.Testcases.CostTransparencyFields</td>
+<td></td>
+<td>0</td>
+<td>ct.Testcases.CostTransparencyFields@14f232c4</td></tr>
+<tr>
+<td title='ct.Testcases.CostTransparencyFields.firstNameTest()'><b>firstNameTest</b><br>Test class: ct.Testcases.CostTransparencyFields</td>
+<td></td>
+<td>0</td>
+<td>ct.Testcases.CostTransparencyFields@2415fc55</td></tr>
+<tr>
+<td title='ct.Testcases.CostTransparencyFields.hscIdTest()'><b>hscIdTest</b><br>Test class: ct.Testcases.CostTransparencyFields</td>
+<td></td>
+<td>0</td>
+<td>ct.Testcases.CostTransparencyFields@14f232c4</td></tr>
+<tr>
+<td title='ct.Testcases.CostTransparencyFields.hscIdTest()'><b>hscIdTest</b><br>Test class: ct.Testcases.CostTransparencyFields</td>
+<td></td>
+<td>0</td>
+<td>ct.Testcases.CostTransparencyFields@2415fc55</td></tr>
+<tr>
+<td title='ct.Testcases.CostTransparencyFields.memberIdentifierTest()'><b>memberIdentifierTest</b><br>Test class: ct.Testcases.CostTransparencyFields</td>
+<td></td>
+<td>3</td>
+<td>ct.Testcases.CostTransparencyFields@14f232c4</td></tr>
+<tr>
+<td title='ct.Testcases.CostTransparencyFields.memberIdentifierTest()'><b>memberIdentifierTest</b><br>Test class: ct.Testcases.CostTransparencyFields</td>
+<td></td>
+<td>3</td>
+<td>ct.Testcases.CostTransparencyFields@2415fc55</td></tr>
+<tr>
+<td title='ct.Testcases.CostTransparencyFields.planTest()'><b>planTest</b><br>Test class: ct.Testcases.CostTransparencyFields</td>
+<td></td>
+<td>0</td>
+<td>ct.Testcases.CostTransparencyFields@14f232c4</td></tr>
+<tr>
+<td title='ct.Testcases.CostTransparencyFields.planTest()'><b>planTest</b><br>Test class: ct.Testcases.CostTransparencyFields</td>
+<td></td>
+<td>0</td>
+<td>ct.Testcases.CostTransparencyFields@2415fc55</td></tr>
+<tr>
+<td title='ct.Testcases.CostTransparencyFields.primaryLanguageTest()'><b>primaryLanguageTest</b><br>Test class: ct.Testcases.CostTransparencyFields</td>
+<td></td>
+<td>0</td>
+<td>ct.Testcases.CostTransparencyFields@14f232c4</td></tr>
+<tr>
+<td title='ct.Testcases.CostTransparencyFields.primaryLanguageTest()'><b>primaryLanguageTest</b><br>Test class: ct.Testcases.CostTransparencyFields</td>
+<td></td>
+<td>0</td>
+<td>ct.Testcases.CostTransparencyFields@2415fc55</td></tr>
+<tr>
+<td title='ct.Testcases.CostTransparencyFields.primaryPhoneTest()'><b>primaryPhoneTest</b><br>Test class: ct.Testcases.CostTransparencyFields</td>
+<td></td>
+<td>0</td>
+<td>ct.Testcases.CostTransparencyFields@14f232c4</td></tr>
+<tr>
+<td title='ct.Testcases.CostTransparencyFields.primaryPhoneTest()'><b>primaryPhoneTest</b><br>Test class: ct.Testcases.CostTransparencyFields</td>
+<td></td>
+<td>0</td>
+<td>ct.Testcases.CostTransparencyFields@2415fc55</td></tr>
+<tr>
+<td title='ct.Testcases.CostTransparencyFields.procedureCodeTest()'><b>procedureCodeTest</b><br>Test class: ct.Testcases.CostTransparencyFields</td>
+<td></td>
+<td>0</td>
+<td>ct.Testcases.CostTransparencyFields@14f232c4</td></tr>
+<tr>
+<td title='ct.Testcases.CostTransparencyFields.procedureCodeTest()'><b>procedureCodeTest</b><br>Test class: ct.Testcases.CostTransparencyFields</td>
+<td></td>
+<td>0</td>
+<td>ct.Testcases.CostTransparencyFields@2415fc55</td></tr>
+<tr>
+<td title='ct.Testcases.CostTransparencyFields.procedurecodeDescriptionTest()'><b>procedurecodeDescriptionTest</b><br>Test class: ct.Testcases.CostTransparencyFields</td>
+<td></td>
+<td>0</td>
+<td>ct.Testcases.CostTransparencyFields@14f232c4</td></tr>
+<tr>
+<td title='ct.Testcases.CostTransparencyFields.providerAddressTest()'><b>providerAddressTest</b><br>Test class: ct.Testcases.CostTransparencyFields</td>
+<td></td>
+<td>0</td>
+<td>ct.Testcases.CostTransparencyFields@14f232c4</td></tr>
+<tr>
+<td title='ct.Testcases.CostTransparencyFields.providerAddressTest()'><b>providerAddressTest</b><br>Test class: ct.Testcases.CostTransparencyFields</td>
+<td></td>
+<td>0</td>
+<td>ct.Testcases.CostTransparencyFields@2415fc55</td></tr>
+<tr>
+<td title='ct.Testcases.CostTransparencyFields.providerCityTest()'><b>providerCityTest</b><br>Test class: ct.Testcases.CostTransparencyFields</td>
+<td></td>
+<td>0</td>
+<td>ct.Testcases.CostTransparencyFields@14f232c4</td></tr>
+<tr>
+<td title='ct.Testcases.CostTransparencyFields.providerCityTest()'><b>providerCityTest</b><br>Test class: ct.Testcases.CostTransparencyFields</td>
+<td></td>
+<td>0</td>
+<td>ct.Testcases.CostTransparencyFields@2415fc55</td></tr>
+<tr>
+<td title='ct.Testcases.CostTransparencyFields.providerNameTest()'><b>providerNameTest</b><br>Test class: ct.Testcases.CostTransparencyFields</td>
+<td></td>
+<td>0</td>
+<td>ct.Testcases.CostTransparencyFields@14f232c4</td></tr>
+<tr>
+<td title='ct.Testcases.CostTransparencyFields.providerNameTest()'><b>providerNameTest</b><br>Test class: ct.Testcases.CostTransparencyFields</td>
+<td></td>
+<td>0</td>
+<td>ct.Testcases.CostTransparencyFields@2415fc55</td></tr>
+<tr>
+<td title='ct.Testcases.CostTransparencyFields.providerNetworkStatusTest()'><b>providerNetworkStatusTest</b><br>Test class: ct.Testcases.CostTransparencyFields</td>
+<td></td>
+<td>0</td>
+<td>ct.Testcases.CostTransparencyFields@14f232c4</td></tr>
+<tr>
+<td title='ct.Testcases.CostTransparencyFields.providerNetworkStatusTest()'><b>providerNetworkStatusTest</b><br>Test class: ct.Testcases.CostTransparencyFields</td>
+<td></td>
+<td>0</td>
+<td>ct.Testcases.CostTransparencyFields@2415fc55</td></tr>
+<tr>
+<td title='ct.Testcases.CostTransparencyFields.providerSpecialityTest()'><b>providerSpecialityTest</b><br>Test class: ct.Testcases.CostTransparencyFields</td>
+<td></td>
+<td>0</td>
+<td>ct.Testcases.CostTransparencyFields@14f232c4</td></tr>
+<tr>
+<td title='ct.Testcases.CostTransparencyFields.providerSpecialityTest()'><b>providerSpecialityTest</b><br>Test class: ct.Testcases.CostTransparencyFields</td>
+<td></td>
+<td>0</td>
+<td>ct.Testcases.CostTransparencyFields@2415fc55</td></tr>
+<tr>
+<td title='ct.Testcases.CostTransparencyFields.providerStateTest()'><b>providerStateTest</b><br>Test class: ct.Testcases.CostTransparencyFields</td>
+<td></td>
+<td>0</td>
+<td>ct.Testcases.CostTransparencyFields@14f232c4</td></tr>
+<tr>
+<td title='ct.Testcases.CostTransparencyFields.providerStateTest()'><b>providerStateTest</b><br>Test class: ct.Testcases.CostTransparencyFields</td>
+<td></td>
+<td>0</td>
+<td>ct.Testcases.CostTransparencyFields@2415fc55</td></tr>
+<tr>
+<td title='ct.Testcases.CostTransparencyFields.providerZipcodeTest()'><b>providerZipcodeTest</b><br>Test class: ct.Testcases.CostTransparencyFields</td>
+<td></td>
+<td>0</td>
+<td>ct.Testcases.CostTransparencyFields@14f232c4</td></tr>
+<tr>
+<td title='ct.Testcases.CostTransparencyFields.providerZipcodeTest()'><b>providerZipcodeTest</b><br>Test class: ct.Testcases.CostTransparencyFields</td>
+<td></td>
+<td>0</td>
+<td>ct.Testcases.CostTransparencyFields@2415fc55</td></tr>
+<tr>
+<td title='ct.Testcases.CostTransparencyFields.serviceRefrenceNumberTest()'><b>serviceRefrenceNumberTest</b><br>Test class: ct.Testcases.CostTransparencyFields</td>
+<td></td>
+<td>0</td>
+<td>ct.Testcases.CostTransparencyFields@14f232c4</td></tr>
+<tr>
+<td title='ct.Testcases.CostTransparencyFields.serviceRefrenceNumberTest()'><b>serviceRefrenceNumberTest</b><br>Test class: ct.Testcases.CostTransparencyFields</td>
+<td></td>
+<td>0</td>
+<td>ct.Testcases.CostTransparencyFields@2415fc55</td></tr>
+<tr>
+<td title='ct.Testcases.CostTransparencyFields.stateTest()'><b>stateTest</b><br>Test class: ct.Testcases.CostTransparencyFields</td>
+<td></td>
+<td>0</td>
+<td>ct.Testcases.CostTransparencyFields@14f232c4</td></tr>
+<tr>
+<td title='ct.Testcases.CostTransparencyFields.stateTest()'><b>stateTest</b><br>Test class: ct.Testcases.CostTransparencyFields</td>
+<td></td>
+<td>0</td>
+<td>ct.Testcases.CostTransparencyFields@2415fc55</td></tr>
+<tr>
+<td title='ct.Testcases.CostTransparencyFields.zipCodeTest()'><b>zipCodeTest</b><br>Test class: ct.Testcases.CostTransparencyFields</td>
+<td></td>
+<td>0</td>
+<td>ct.Testcases.CostTransparencyFields@14f232c4</td></tr>
+<tr>
+<td title='ct.Testcases.CostTransparencyFields.zipCodeTest()'><b>zipCodeTest</b><br>Test class: ct.Testcases.CostTransparencyFields</td>
+<td></td>
+<td>0</td>
+<td>ct.Testcases.CostTransparencyFields@2415fc55</td></tr>
+</table><p>
+</body>
+</html>
